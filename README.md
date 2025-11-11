@@ -37,11 +37,6 @@ TASK MANAGEMENT APP/
 │       ├── tests/
 │       ├── package.json
 │       └── package-lock.json
-│
-├── server/
-├── .gitignore
-├── README.md
-└── package-lock.json
 ```
 
 ## Setup Instructions
