@@ -1,0 +1,14 @@
+# Node modules folder
+node_modules/
+
+# Environment variables file
+.env/
+
+# Log files
+*.log
+
+# System files
+.DS_Store
+
+# Test coverage folder
+coverage/
