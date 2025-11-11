@@ -6,9 +6,9 @@ import taskRoutes from './routes/taskRoutes.js';
 import mongoose from 'mongoose';
 
 const app = express();
+const allowedOrigin = ['http://localhost:5173', 'https://task-management-app-nine-eta.vercel.app'];
 
-
-app.use(cors({ origin: config.clientOrigin, credentials: false }));
+app.use(cors({ origin: allowedOrigin, credentials: false }));
 app.use(express.json());
 
 
