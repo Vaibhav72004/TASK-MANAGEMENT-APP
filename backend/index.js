@@ -19,7 +19,7 @@ app.get('/api/health', (req, res) => {
   return res.status(200).json({ status: 'ok' });
 });
 
-// Routes
+
 app.use('/api/auth', authRoutes);
 app.use('/api/tasks', taskRoutes);
 
@@ -30,7 +30,7 @@ app.use((err, req, res, next) => {
   return res.status(status).json({ message: err.message || 'Internal Server Error' });
 });
 
-// Start server after DB connect
+
 async function start() {
   try {
     await mongoose.connect(config.mongoUri, { dbName: config.dbName });
