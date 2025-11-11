@@ -16,7 +16,7 @@ api.interceptors.response.use(
   (error) => {
     if (error.response && error.response.status === 401) {
       // Token invalid/expired: optionally clear token
-      // localStorage.removeItem('token');
+      localStorage.removeItem('token');
     }
     return Promise.reject(error);
   }

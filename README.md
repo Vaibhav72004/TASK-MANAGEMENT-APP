@@ -23,8 +23,7 @@ TASK MANAGEMENT APP/
 │   ├── package-lock.json
 │   └── .env
 │
-├── client/
-│   └── frontend/
+├── frontend/
 │       ├── node_modules/
 │       ├── public/
 │       ├── src/
@@ -52,12 +51,12 @@ TASK MANAGEMENT APP/
 - MongoDB connection string (Atlas or local)
 
 2) Backend
-- Copy `backend/.env.example` to `backend/.env` and set values
+- Create `backend/.env` and set values
 - Install deps: `cd backend && npm install`
 - Run dev server: `npm start`
 
 3) Frontend
-- Install deps: `cd client/frontend && npm install`
+- Install deps: `cd frontend && npm install`
 - Run dev server: `npm run dev`
 
 4) Environment Variables
